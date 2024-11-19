@@ -1,0 +1,83 @@
+/* Set full-page background image */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;  /* Make the body a flex container */
+  justify-content: center;  /* Center horizontally */
+  align-items: center;  /* Center vertically */
+  background-image: url('lock.webp');  /* Update with your image path */
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Login page container */
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Ensure the full width is used */
+  height: 100%; /* Full height to center content */
+}
+
+/* Card styling */
+.card {
+  background-color: rgba(255, 255, 255, 0.9); /* Slight transparency */
+  border-radius: 10px;
+  padding: 40px;  /* Adjusted padding for both top and sides */
+  width: 100%;
+  max-width: 400px; /* Limit card width */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle box-shadow effect */
+  text-align: center; /* Optional: to center content inside the card */
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for input group to hold icons and inputs */
+.input-group {
+  position: relative;
+  margin-bottom: 15px;
+  padding: 5px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px 40px 10px 40px; /* Padding for proper spacing */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.input-group .fa {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #007bff; /* Icon color */
+}
+
+/* Style for button */
+button {
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .card {
+    padding: 20px 25px; /* Reduced padding for smaller screens */
+  }
+}

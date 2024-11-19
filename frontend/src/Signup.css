@@ -1,0 +1,133 @@
+/* Global reset for body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa; /* Light background color */
+}
+
+/* Full-page background */
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #e9ecef; /* Soft light gray background */
+}
+
+/* Styling for the sign-up card */
+.signup-card {
+    background-color: #ffffff; /* White background for the card */
+    border-radius: 15px; /* More rounded corners for a softer look */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); /* Deep shadow for a floating effect */
+    padding: 40px;
+    width: 600px; /* Increase the width */
+    max-width: 100%; /* Allow card to expand if needed */
+    height: auto; /* Auto height, adjusts based on content */
+    box-sizing: border-box; /* Ensures padding is included in width calculation */
+    transition: all 0.3s ease-in-out; /* Smooth transition on hover */
+}
+
+/* Hover effect for card */
+.signup-card:hover {
+    transform: translateY(-10px); /* Slightly lift the card on hover */
+}
+
+/* Title styling */
+.card-title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 2.2rem; /* Larger font size */
+    font-weight: 600;
+}
+
+/* Form label styling */
+.form-label {
+    color: #444;
+    font-weight: 500; /* Slightly bold labels */
+    margin-bottom: 8px;
+    display: block;
+}
+
+/* Input field styling */
+.form-control {
+    border-radius: 8px;
+    border: 1px solid #ddd; /* Lighter border for inputs */
+    padding: 12px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    width: 100%; /* Ensure input fields span the full width */
+    box-sizing: border-box; /* Ensure padding does not affect width */
+    transition: border-color 0.3s ease;
+}
+
+/* Input focus effect */
+.form-control:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Custom radio button styling */
+.form-check-label {
+    font-size: 1rem;
+    color: #444;
+    margin-left: 8px;
+}
+
+/* Button styling */
+.btn-primary {
+    background-color: #2786e6; /* Custom blue */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    border-radius: 8px; /* Rounded button corners */
+    width: 100%; /* Button spans full width */
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Button hover effect */
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Optional: Focus effect for the button */
+.btn-primary:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Styling for address selection */
+.mb-3 .form-check {
+    margin-bottom: 15px;
+}
+
+/* Styling for required fields */
+.text-danger {
+    color: #ff4d4d; /* Red for required fields */
+}
+
+/* Additional spacing */
+.mb-3 {
+    margin-bottom: 1.5rem; /* Consistent spacing between form groups */
+}
+
+/* Adjustments for mobile view */
+@media (max-width: 600px) {
+    .signup-card {
+        padding: 20px;
+        width: 100%; /* Make the card take up full width on smaller screens */
+    }
+    .card-title {
+        font-size: 1.6rem; /* Smaller title for mobile */
+    }
+    .form-control {
+        padding: 10px; /* Less padding on mobile */
+    }
+    .btn-primary {
+        font-size: 1rem; /* Smaller button font size on mobile */
+    }
+}
